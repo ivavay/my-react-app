@@ -1,7 +1,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont,'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.3;
 }
 
@@ -9,6 +9,7 @@ a {
   color: #00f;
   text-decoration: none;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .HeroGroup {
@@ -22,11 +23,22 @@ a {
   margin: 0;
   font-size: 30px;
   line-height: 1.2;
+  animation: HeroAnimation;
+  animation-duration: 3s;
+  animation-delay: 0.1;
+  animation-fill-mode: forwards;
+  animation-timing-function: 
+  cubic-bezier(0.2, 0.8, 0.2,1);
+  opacity: 0;
 }
 
 .Hero p {
+  padding: 25px 10px;
   color: #696969;
-  font-size: 18px;
+  font-size: 16px;
+  animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2,1);
+  line-height: 1.3;
+  opacity: 0;
 }
 
 .Hero a {
@@ -39,8 +51,28 @@ a {
   border-radius: 20px;
 }
 
+.Hero a:hover {
+  background: #FFF; 
+  box-shadow: 0 10px 20px rgba(0,0,0,0,25);
+  color: #00f;
+  transition: 1s; 
+  transform: translateY(-3px);
+  border: 1px solid #00f;
+  transition: cubic-bezier(0.2, 0.8, 0.2, 1)
+}
+
 @media (max-width: 640) {
   .HeroGroup {
     padding: 100px 20px;
+  }
+}
+@keyframes HeroAnimation {
+  0%{
+    opacity: 0; 
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

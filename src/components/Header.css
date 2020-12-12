@@ -13,8 +13,9 @@
     justify-items: center;
 }
 
-.Header a {
+.Header a:hover {
     font-size: 16px;
+    border-bottom: 5px solid #00f;
 }
 
 @media (max-width: 640) {
