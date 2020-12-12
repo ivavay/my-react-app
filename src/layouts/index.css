@@ -56,7 +56,7 @@ a {
 .Hero a:hover {
   background: #FFF; 
   box-shadow: 0 10px 20px rgba(0,0,0,0,25);
-  /* color: #00f; */
+  color: #00f;
   transition: 1s; 
   transform: translateY(-3px);
   border: 1px solid #00f;
