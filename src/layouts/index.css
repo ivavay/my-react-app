@@ -6,7 +6,8 @@ body {
 }
 
 a {
-  color: #00f;
+  color: rgb(0, 0, 0);
+  /* color: #00f; */
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
@@ -37,8 +38,9 @@ a {
   color: #696969;
   font-size: 16px;
   animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2,1);
-  line-height: 1.3;
+  line-height: 1.5;
   opacity: 0;
+  text-align: left;
 }
 
 .Hero a {
@@ -54,7 +56,7 @@ a {
 .Hero a:hover {
   background: #FFF; 
   box-shadow: 0 10px 20px rgba(0,0,0,0,25);
-  color: #00f;
+  /* color: #00f; */
   transition: 1s; 
   transform: translateY(-3px);
   border: 1px solid #00f;
