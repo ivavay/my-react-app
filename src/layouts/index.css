@@ -90,3 +90,22 @@ a {
   left: 0; 
   
 }
+.CardGroup {
+  margin: 300px 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  justify-items: center;
+}
+
+@media (max-width: 1060px) {
+  .CardGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .CardGroup {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
