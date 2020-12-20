@@ -52,7 +52,7 @@ const IndexPage = () => (
           title = "Poetry"
           text = "coming soon"
           image ={require("../images/card.jpg")}
-          /></a>
+          />
       </div>
     </div>
   </div>
