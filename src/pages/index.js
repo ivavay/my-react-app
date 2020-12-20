@@ -8,7 +8,6 @@ const IndexPage = () => (
       <div className = "HeroGroup">
       <h1>A multiciplinary designer based in Taipei, Taiwan</h1>
       <p>Hi! I'm Ivy Chen, currently studying Cognitive Science at UC Santa Cruz. I'm interested in the area of non-traditional learnings and how that might enable more people to pursue their creative interests. In my free time, I love to spend time honing my skills in 3D and creative coding. </p>
-      <Link to="/page-2/">See work</Link>
       <svg width="2560" height="172" viewBox="0 0 100% 172" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill="#4C4DEF">
      <animate repeatCount =  "indefinite" fill = "freeze" attributeName = "d" dur = "10s" values ="
@@ -37,16 +36,21 @@ const IndexPage = () => (
           }/></a>
         <Card 
           title = "Embroidery"
-          text = "see more"
+          text = "coming soon"
           image ={require("../images/card.jpg")}/>
         <Card 
           title = "3D"
-          text = "see more"
+          text = "coming soon"
           image ={require("../images/card.jpg")}/>
         <a href = "ttps://vsco.co/ivavay/gallery">
         <Card 
           title = "Photography"
           text = "see more"
+          image ={require("../images/card.jpg")}
+          /></a>
+         <Card 
+          title = "Poetry"
+          text = "coming soon"
           image ={require("../images/card.jpg")}
           /></a>
       </div>
