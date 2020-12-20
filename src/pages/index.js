@@ -30,10 +30,11 @@ const IndexPage = () => (
     <div className="Cards">
       {/* <h2>hello more</h2> */}
       <div className = "CardGroup"> 
-        <Card 
+      <a href ="https://www.openprocessing.org/user/236304/"><Card 
           title = "Creative Coding"
           text = "see more"
-          image ={require("../images/card.jpg")}/>
+          image ={require("../images/card.jpg")
+          }/></a>
         <Card 
           title = "Embroidery"
           text = "see more"
@@ -42,10 +43,12 @@ const IndexPage = () => (
           title = "3D"
           text = "see more"
           image ={require("../images/card.jpg")}/>
+        <a href = "ttps://vsco.co/ivavay/gallery">
         <Card 
           title = "Photography"
           text = "see more"
-          image ={require("../images/card.jpg")}/>
+          image ={require("../images/card.jpg")}
+          /></a>
       </div>
     </div>
   </div>

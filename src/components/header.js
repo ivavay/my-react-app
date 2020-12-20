@@ -5,7 +5,7 @@ import "./Header.css"
 const Header = ({ siteTitle }) => (
   <div className = "Header">
     <div className = "HeaderGroup">
-     <Link to = "/writings">Writings</Link>
+    <a href ="https://reading.supply/@ivavay">Writings</a>
     </div>
   </div>
 )
